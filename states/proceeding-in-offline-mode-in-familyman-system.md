@@ -33,6 +33,6 @@ _No events found._
 
 | Event | Start state | Runnable by |
 |---|---|---|
-| Statement of Truth and submit (`fl401StatementOfTruthAndSubmit`) | [Draft](./draft.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen` (`citizen`)<br/>`hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`) |
-| Issue and send to local court (`issueAndSendToLocalCourtCallback`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`) |
-| Issue and send to local court (`issueAndSendToLocalCourtCallback`) | [Submitted](./submitted.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`) |
+| Statement of Truth and submit (`fl401StatementOfTruthAndSubmit`) | [Draft](./draft.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen`<br/>(`citizen`)<br/>`hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`) |
+| Issue and send to local court (`issueAndSendToLocalCourtCallback`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`) |
+| Issue and send to local court (`issueAndSendToLocalCourtCallback`) | [Submitted](./submitted.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`) |

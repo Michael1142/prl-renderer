@@ -30,23 +30,23 @@ flowchart LR
 
 | Event | End state | Runnable by |
 |---|---|---|
-| Withdraw application (`WithdrawApplication_Event`) | [Withdrawn](./withdrawn.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen` (`citizen`) |
-| Withdraw Citizen Case (`citizenCaseWithdraw`) | [Withdrawn](./withdrawn.md) | `idam:citizen` (`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`) |
-| Process HWF for Citizen case (`hwfProcessCaseUpdate`) | [Submitted](./submitted.md) | `idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`) |
-| Process urgent help with fees (`processUrgentHelpWithFees`) | [Submitted](./submitted.md) | `idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`) |
-| Request Further Information (`requestFurtherInformation`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`)<br/>`ctsc-team-leader`<br/>`idam:caseworker-privatelaw-superuser` (`caseworker-privatelaw-superuser`)<br/>`idam:caseworker-wa-task-configuration` (`caseworker-wa-task-configuration`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-team-leader` |
-| Further Information Reasons (`requestFurtherInformationHistory`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`)<br/>`ctsc-team-leader`<br/>`idam:caseworker-privatelaw-superuser` (`caseworker-privatelaw-superuser`)<br/>`idam:caseworker-wa-task-configuration` (`caseworker-wa-task-configuration`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-team-leader` |
+| Withdraw application (`WithdrawApplication_Event`) | [Withdrawn](./withdrawn.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen`<br/>(`citizen`) |
+| Withdraw Citizen Case (`citizenCaseWithdraw`) | [Withdrawn](./withdrawn.md) | `idam:citizen`<br/>(`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`) |
+| Process HWF for Citizen case (`hwfProcessCaseUpdate`) | [Submitted](./submitted.md) | `idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`) |
+| Process urgent help with fees (`processUrgentHelpWithFees`) | [Submitted](./submitted.md) | `idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`) |
+| Request Further Information (`requestFurtherInformation`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`)<br/>`ctsc-team-leader`<br/>`idam:caseworker-privatelaw-superuser`<br/>(`caseworker-privatelaw-superuser`)<br/>`idam:caseworker-wa-task-configuration`<br/>(`caseworker-wa-task-configuration`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-team-leader` |
+| Further Information Reasons (`requestFurtherInformationHistory`) | [Awaiting Information](./awaiting-information.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`)<br/>`ctsc-team-leader`<br/>`idam:caseworker-privatelaw-superuser`<br/>(`caseworker-privatelaw-superuser`)<br/>`idam:caseworker-wa-task-configuration`<br/>(`caseworker-wa-task-configuration`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-team-leader` |
 
 ## In-state events
 
 | Event | End state | Runnable by |
 |---|---|---|
-| Send and reply to messages (`sendOrReplyToMessages`) | [Pending](./pending.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`)<br/>`caseworker-privatelaw-judge`<br/>`tribunal-caseworker`, `senior-tribunal-caseworker`, `allocated-legal-adviser` (`caseworker-privatelaw-la`) |
-| Send and reply to messages (`waSendOrReplyToMessages`) | [Pending](./pending.md) | `hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`)<br/>`caseworker-privatelaw-judge`<br/>`tribunal-caseworker`, `senior-tribunal-caseworker`, `allocated-legal-adviser` (`caseworker-privatelaw-la`) |
+| Send and reply to messages (`sendOrReplyToMessages`) | [Pending](./pending.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`)<br/>`caseworker-privatelaw-judge`<br/>`tribunal-caseworker`<br/>`senior-tribunal-caseworker`<br/>`allocated-legal-adviser`<br/>(`caseworker-privatelaw-la`) |
+| Send and reply to messages (`waSendOrReplyToMessages`) | [Pending](./pending.md) | `hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`)<br/>`caseworker-privatelaw-judge`<br/>`tribunal-caseworker`<br/>`senior-tribunal-caseworker`<br/>`allocated-legal-adviser`<br/>(`caseworker-privatelaw-la`) |
 
 ## Incoming events
 
 | Event | Start state | Runnable by |
 |---|---|---|
-| Submit Citizen Case with HWF (`citizenCaseSubmitWithHWF`) | [Draft](./draft.md) | `idam:citizen` (`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`) |
-| Submit and pay (`submitAndPay`) | [Draft](./draft.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen` (`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate` (`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-admin`, `allocated-admin-caseworker`, `ctsc`, `allocated-ctsc-caseworker` (`caseworker-privatelaw-courtadmin`) |
+| Submit Citizen Case with HWF (`citizenCaseSubmitWithHWF`) | [Draft](./draft.md) | `idam:citizen`<br/>(`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`) |
+| Submit and pay (`submitAndPay`) | [Draft](./draft.md) | `[APPLICANTSOLICITOR]`<br/>`[CREATOR]`<br/>`idam:citizen`<br/>(`citizen`)<br/>`idam:caseworker-privatelaw-systemupdate`<br/>(`caseworker-privatelaw-systemupdate`)<br/>`hearing-centre-admin`<br/>`allocated-admin-caseworker`<br/>`ctsc`<br/>`allocated-ctsc-caseworker`<br/>(`caseworker-privatelaw-courtadmin`) |

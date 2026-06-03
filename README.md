@@ -84,4 +84,3 @@ stateDiagram-v2
 | [Proceeding in offline mode in familyman system](./states/proceeding-in-offline-mode-in-familyman-system.md) | 2 | 0 | 0 |
 | [Awaiting Information](./states/awaiting-information.md) | 2 | 13 | 46 |
 | [Any state](./states/any-state.md) | — | — | 129 |
-
